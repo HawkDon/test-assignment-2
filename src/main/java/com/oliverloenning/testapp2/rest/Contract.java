@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-@RestController
+@RestController("/rest")
 public class Contract implements RestCalls {
 
     private static Bank bank = new BankDummy("abcdef", "Glorious Bank");
