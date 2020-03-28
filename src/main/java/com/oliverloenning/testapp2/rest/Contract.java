@@ -14,7 +14,7 @@ import java.util.stream.Stream;
 @RestController("/rest")
 public class Contract implements RestCalls {
 
-    private static Bank bank = new BankDummy("abcdef", "Glorious Bank");
+    public static Bank bank = new BankDummy("abcdef", "Glorious Bank");
 
     @GetMapping("/movement/{id}")
     @Override
